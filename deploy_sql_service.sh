@@ -4,6 +4,13 @@ base_path="/home/gali/"
 directory_name="/home/gali/participants-data-server"
 file = "/home/gali/secrets/dbconnector.js"
 
+echo "moving service file to the correct folder.."
+	if ! sudo mv /home/gali/sql-service-shell-script/sqlservice.service /etc/systemd/system
+		echo "could not move service file to the correct fodlder"
+	else
+		echo "successfully moced service file to the correct folder"
+	fi
+
 echo "killing existing service called sqlservice.service"...
 
 if ! systemctl stop sqlservice.service; then

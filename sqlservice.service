@@ -6,7 +6,7 @@ Requires=After=mysql.service       # Requires the mysql service to run first
 [Service]
 User=srv_egozi
 Group=service-users
-ExecStart=node /home/gali/sql-service-shell-script/dist/server.js
+ExecStart=node /home/galiparticipants-data-server/dist/server.js
 # Required on some systems
 #WorkingDirectory=/opt/nodeserver
 Restart=always
