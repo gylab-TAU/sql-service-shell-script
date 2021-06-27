@@ -17,7 +17,7 @@ StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=nodejs-example
 User=gali
-#Group=<alternate group>
+Group=sudo
 Environment=NODE_ENV=production PORT=1338
 
 [Install]
