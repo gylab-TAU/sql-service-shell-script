@@ -1,7 +1,7 @@
 #!/bin/sh
-repository="https://github.com/gylab-TAU/sql-service-shell-script.git"
+repository="https://github.com/gylab-TAU/participants-data-server.git"
 base_path="/home/gali/"
-directory_name="/home/gali/sql-service-shell-script"
+directory_name="/home/gali/participants-data-server"
 file = "/home/gali/secrets/dbconnector.js"
 
 echo "killing existing service called sqlservice.service"...
