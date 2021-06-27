@@ -2,7 +2,7 @@
 repository="https://github.com/gylab-TAU/participants-data-server.git"
 base_path="/home/gali/"
 directory_name="/home/gali/participants-data-server"
-file = "/home/gali/secrets/dbConnector.js"
+file="/home/gali/secrets/dbConnector.js"
 
 echo "moving service file to the correct folder.."
 	if ! sudo mv /home/gali/sql-service-shell-script/sqlservice.service /etc/systemd/system; then
