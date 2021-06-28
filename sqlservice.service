@@ -6,7 +6,7 @@ Description=Node.js Example Server
 [Service]
 User=srv_egozi
 Group=service-users
-ExecStart=/bin/node /home/gali/participants-data-server/dist/server.js
+ExecStart=/bin/node /home/srv_egozi/participants-data-server/dist/server.js
 # Required on some systems
 #WorkingDirectory=/opt/nodeserver
 Restart=always
