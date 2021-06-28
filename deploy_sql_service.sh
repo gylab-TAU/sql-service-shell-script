@@ -4,8 +4,8 @@ base_path="/home/gali/"
 directory_name="/home/gali/participants-data-server"
 file="/home/gali/secrets/dbConnector.js"
 
-echo "moving service file to the correct folder.."
-	if ! sudo mv /home/gali/sql-service-shell-script/sqlservice.service /etc/systemd/system; then
+echo "copying service file to the correct folder.."
+	if ! sudo cp /home/gali/sql-service-shell-script/sqlservice.service /etc/systemd/system; then
 		echo "could not move service file to the correct fodlder"
 	else
 		echo "successfully moced service file to the correct folder"
