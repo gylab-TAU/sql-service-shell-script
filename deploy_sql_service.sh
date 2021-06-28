@@ -1,11 +1,11 @@
 #!/bin/sh
 repository="https://github.com/gylab-TAU/participants-data-server.git"
-base_path="/home/gali/"
-directory_name="/home/gali/participants-data-server"
-file="/home/gali/secrets/dbConnector.js"
+base_path="/home/srv_egozi/"
+directory_name="/home/srv_egozi/participants-data-server"
+file="/home/srv_egozi/secrets/dbConnector.js"
 
 echo "copying service file to the correct folder.."
-	if ! sudo cp /home/gali/sql-service-shell-script/sqlservice.service /etc/systemd/system; then
+	if ! sudo cp /home/srv_egozi/sql-service-shell-script/sqlservice.service /etc/systemd/system; then
 		echo "could not move service file to the correct fodlder"
 	else
 		echo "successfully moced service file to the correct folder"
